@@ -9,10 +9,6 @@ export default function MusicButton({ visible }) {
   useEffect(() => () => audioRef.current?.pause(), [])
 
   const toggleMusic = async () => {
-    if (!siteContent.musicFile) {
-      setPlaying(!playing)
-      return
-    }
     if (!audioRef.current) {
       audioRef.current = new Audio(siteContent.musicFile)
       audioRef.current.loop = true
@@ -26,26 +22,15 @@ export default function MusicButton({ visible }) {
   if (!visible) return null
 
   return (
-    <>
-      <button
-        className="music-button"
-        type="button"
-        onClick={toggleMusic}
-        title={`${playing ? 'Pause' : 'Play'} music`}
-        aria-label={`${playing ? 'Pause' : 'Play'} background music`}
-      >
-        {playing ? <Pause size={17} /> : <Music size={17} />}
-        <span>{playing ? 'Pause' : siteContent.favoriteSong}</span>
-      </button>
-      {!siteContent.musicFile && playing && (
-        <div className="music-player">
-          <iframe
-            src={`https://www.youtube-nocookie.com/embed/${siteContent.musicVideoId}?autoplay=1&loop=1&playlist=${siteContent.musicVideoId}&playsinline=1&rel=0`}
-            title={`${siteContent.favoriteSong} music player`}
-            allow="autoplay; encrypted-media; picture-in-picture"
-          />
-        </div>
-      )}
-    </>
+    <button
+      className="music-button"
+      type="button"
+      onClick={toggleMusic}
+      title={`${playing ? 'Pause' : 'Play'} music`}
+      aria-label={`${playing ? 'Pause' : 'Play'} background music`}
+    >
+      {playing ? <Pause size={17} /> : <Music size={17} />}
+      <span>{playing ? 'Pause' : siteContent.favoriteSong}</span>
+    </button>
   )
 }

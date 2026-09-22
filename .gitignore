@@ -3,6 +3,7 @@ dist/
 .DS_Store
 .env.local
 public/assets/music/*.mp3
+!public/assets/music/Aditya___Ek_din_aap.mp3
 public/assets/photos/913aa6d6-7c4e-4972-b028-4efd50f08c3a.JPG
 public/assets/photos/e66b6923-a257-4a82-a633-f1ff97bc5b88.JPG
 public/assets/photos/IMG_8389.jpeg

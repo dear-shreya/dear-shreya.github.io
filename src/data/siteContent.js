@@ -39,6 +39,5 @@ export const siteContent = {
     'I know you love me and want to marry me, hehe.',
     'Bonus: Ye kisi ke aage mat padhiyo agar tune sabke saamne khol rakha ho toh, “I also love the way you kiss me and jis tarah se tu mujhpar haq jatati hai” hehe <3',
   ],
-  musicFile: import.meta.env.VITE_MUSIC_FILE || '',
-  musicVideoId: 'mIycZ8tPAWc',
+  musicFile: assetPath('assets/music/Aditya___Ek_din_aap.mp3'),
 }
