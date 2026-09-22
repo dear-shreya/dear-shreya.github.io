@@ -1,4 +1,6 @@
 // This is the only file you need to edit to personalize the words, photos, and music.
+const assetPath = (path) => `${import.meta.env.BASE_URL}${path}`
+
 export const siteContent = {
   girlfriend: {
     name: 'Shreya',
@@ -21,13 +23,13 @@ export const siteContent = {
     { label: '10 September 2026, the day we actually met', detail: 'After so many lovely moments online and so many promises, this was the day I finally got to know that you are actually real. I had a lotttttt of fun with you during those five days. You had your first drink too, and now I can surely say that drunk Shreya is my favourite genre. Of course, she also kisses me in public when she is drunk. You are the absolute best company, and I would be so fortunate to have you beside me for my entire life (obviously, only if you want that too). I will never forget our airport hug. One lovely side effect is that you now know exactly how comfortable I am with you. I do not even think twice before saying every stupid thing that crosses my mind.', icon: '07' },
   ],
   photos: [
-    { src: '/assets/photos/shreya-at-dinner.jpg?v=2', alt: 'Shreya smiling across a candlelit dinner table', caption: 'Our official first date. Drunk Shreya: officially my fav genre.' },
-    { src: '/assets/photos/us-at-the-view.jpg?v=2', alt: 'Shreya and Aditya standing together in front of a beautiful city view', caption: 'You, me, and a view I barely noticed.' },
-    { src: '/assets/photos/cafe-selfie.jpg', alt: 'Shreya and Aditya smiling together across a cafe table', caption: 'Us. Finally.' },
-    { src: '/assets/photos/first-selfie.jpg', alt: 'Shreya and Aditya smiling together among the greenery', caption: 'Our first airport goodbye.' },
-    { src: '/assets/photos/retro-us.jpg', alt: 'A colorful retro portrait of Shreya and Aditya in matching sunglasses', caption: 'Good vibes, but better because it is us. #80svibes' },
-    { src: '/assets/photos/future-us.jpg', alt: 'A dreamy portrait of Shreya and Aditya smiling at each other in the mountains', caption: 'Manifesting a million more moments with you.' },
-    { src: '/assets/photos/shreya-became-a-doctor.jpg', alt: 'A celebration poster congratulating Shreya on becoming a doctor', caption: 'Remember the day you became a doctor.' },
+    { src: assetPath('assets/photos/shreya-at-dinner.jpg?v=2'), alt: 'Shreya smiling across a candlelit dinner table', caption: 'Our official first date. Drunk Shreya: officially my fav genre.' },
+    { src: assetPath('assets/photos/us-at-the-view.jpg?v=2'), alt: 'Shreya and Aditya standing together in front of a beautiful city view', caption: 'You, me, and a view I barely noticed.' },
+    { src: assetPath('assets/photos/cafe-selfie.jpg'), alt: 'Shreya and Aditya smiling together across a cafe table', caption: 'Us. Finally.' },
+    { src: assetPath('assets/photos/first-selfie.jpg'), alt: 'Shreya and Aditya smiling together among the greenery', caption: 'Our first airport goodbye.' },
+    { src: assetPath('assets/photos/retro-us.jpg'), alt: 'A colorful retro portrait of Shreya and Aditya in matching sunglasses', caption: 'Good vibes, but better because it is us. #80svibes' },
+    { src: assetPath('assets/photos/future-us.jpg'), alt: 'A dreamy portrait of Shreya and Aditya smiling at each other in the mountains', caption: 'Manifesting a million more moments with you.' },
+    { src: assetPath('assets/photos/shreya-became-a-doctor.jpg'), alt: 'A celebration poster congratulating Shreya on becoming a doctor', caption: 'Remember the day you became a doctor.' },
   ],
   loveNotes: [
     'When you say “Kya karu bhai mai tera?” (and of course, touch yourself at the same time while thinking about me).',
