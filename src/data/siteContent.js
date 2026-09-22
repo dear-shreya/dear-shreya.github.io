@@ -40,5 +40,5 @@ export const siteContent = {
     'Bonus: Ye kisi ke aage mat padhiyo agar tune sabke saamne khol rakha ho toh, “I also love the way you kiss me and jis tarah se tu mujhpar haq jatati hai” hehe <3',
   ],
   musicFile: import.meta.env.VITE_MUSIC_FILE || '',
-  musicLink: 'https://www.youtube.com/results?search_query=Ek+Din+Aap+Yun+Humko+Mil+Jayenge+Little+Things',
+  musicVideoId: 'mIycZ8tPAWc',
 }

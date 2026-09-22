@@ -10,7 +10,7 @@ export default function MusicButton({ visible }) {
 
   const toggleMusic = async () => {
     if (!siteContent.musicFile) {
-      window.open(siteContent.musicLink, '_blank', 'noopener,noreferrer')
+      setPlaying(!playing)
       return
     }
     if (!audioRef.current) {
@@ -26,15 +26,26 @@ export default function MusicButton({ visible }) {
   if (!visible) return null
 
   return (
-    <button
-      className="music-button"
-      type="button"
-      onClick={toggleMusic}
-      title={siteContent.musicFile ? `${playing ? 'Pause' : 'Play'} music` : `Open ${siteContent.favoriteSong}`}
-      aria-label={siteContent.musicFile ? `${playing ? 'Pause' : 'Play'} background music` : `Open ${siteContent.favoriteSong}`}
-    >
-      {playing ? <Pause size={17} /> : <Music size={17} />}
-      <span>{playing ? 'Pause' : siteContent.favoriteSong}</span>
-    </button>
+    <>
+      <button
+        className="music-button"
+        type="button"
+        onClick={toggleMusic}
+        title={`${playing ? 'Pause' : 'Play'} music`}
+        aria-label={`${playing ? 'Pause' : 'Play'} background music`}
+      >
+        {playing ? <Pause size={17} /> : <Music size={17} />}
+        <span>{playing ? 'Pause' : siteContent.favoriteSong}</span>
+      </button>
+      {!siteContent.musicFile && playing && (
+        <div className="music-player">
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${siteContent.musicVideoId}?autoplay=1&loop=1&playlist=${siteContent.musicVideoId}&playsinline=1&rel=0`}
+            title={`${siteContent.favoriteSong} music player`}
+            allow="autoplay; encrypted-media; picture-in-picture"
+          />
+        </div>
+      )}
+    </>
   )
 }
