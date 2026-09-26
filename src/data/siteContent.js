@@ -30,6 +30,11 @@ export const siteContent = {
     { src: assetPath('assets/photos/retro-us.jpg'), alt: 'A colorful retro portrait of Shreya and Aditya in matching sunglasses', caption: 'Good vibes, but better because it is us. #80svibes' },
     { src: assetPath('assets/photos/future-us.jpg'), alt: 'A dreamy portrait of Shreya and Aditya smiling at each other in the mountains', caption: 'Manifesting a million more moments with you.' },
     { src: assetPath('assets/photos/shreya-became-a-doctor.jpg'), alt: 'A celebration poster congratulating Shreya on becoming a doctor', caption: 'Remember the day you became a doctor.' },
+    { src: assetPath('assets/photos/video-call-no-going-back.jpg'), alt: 'Shreya and Aditya sharing a video call', caption: 'The day I got to know mujhe tujhse bohot farak padta hai. Aur ab koi going back nahi hai.' },
+    { src: assetPath('assets/photos/first-home-video-call.jpg'), alt: 'Shreya and Aditya smiling together on a video call', caption: 'A cute memory, jab maine first time apne ghar par VC kari thi tujhse.' },
+    { src: assetPath('assets/photos/manifested-memory.jpg'), alt: 'A screenshot of the moment Shreya and Aditya later recreated', caption: 'A manifestation, I would say, jo humne recreate kar li.' },
+    { src: assetPath('assets/photos/surgery-viva-doctor-coat.jpg'), alt: 'Shreya taking a mirror selfie in her doctor coat before her surgery viva', caption: 'The day you went for your surgery viva. I saw you in a doctor coat for the first time (you looked very beautiful in this).' },
+    { src: assetPath('assets/photos/first-photo-shreya.jpg'), alt: 'Shreya smiling in the sunlight and giving two thumbs up', caption: 'Remember jab tune pehli baar apni photo bheji thi mujhe?' },
   ],
   loveNotes: [
     'When you say “Kya karu bhai mai tera?” (and of course, touch yourself at the same time while thinking about me).',
