@@ -43,6 +43,7 @@ export const siteContent = {
     'How brave, intelligent, confident, and smart you are. Of course, you do not have to be any of these in front of me. I can be your chhat wala kamra.',
     'I know you love me and want to marry me, hehe.',
     'Bonus: Ye kisi ke aage mat padhiyo agar tune sabke saamne khol rakha ho toh, “I also love the way you kiss me and jis tarah se tu mujhpar haq jatati hai” hehe <3',
+    'I mean, vaise toh mai tujhe pura ka pura hi bhot zyada pyaar karta hu laadli, but I have to limit it to a few points for this website. Just know that I love you sooo muchhhh ❤️',
   ],
   musicFile: assetPath('assets/music/Aditya___Ek_din_aap.mp3'),
 }
